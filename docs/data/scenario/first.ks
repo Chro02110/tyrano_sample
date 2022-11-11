@@ -1,46 +1,128 @@
 *start
 
-[title name="走るか寝るかするメロス"]
+[title name="カレーの作り方"]
 [hidemenubutton]
 [wait time=200]
 [freeimage layer="base"]
 
-「走るか寝るかするメロス」[l][r]
+「カレーの作り方」[l][r]
 
-メロスは激怒した。[l][r]
+お腹がすいてきた。[l][r]
 
-必ず、かの邪智暴虐の王を除かねばならぬと決意した。[l][r]
-
-(中略)[l][r]
-
-ああ、何もかも、ばかばかしい。私は、醜い裏切り者だ。どうとも、勝手にするがよい。やんぬる哉。[l][r]
-メロスは...[l][r]
-
-[link target=*tag_sleep] →寝る [endlink][r]
-[link target=*tag_run] →走る [endlink][r]
-[s]
-
-*tag_sleep
+よし、今日の夜ご飯はカレーにしよう！[l][r]
 
 [cm]
 
-[bg storage=sleep.jpg time=500]
+[bg storage=otsukai_boy.png time=500]
 
-メロスは死んだように深く眠った。[l][r]
-勇者は、ひどく赤面した。[r]
+買い物に行って食材は揃ったはず。[l][r]
+
+さあ、料理を始めよう！[l][r]
+
+[link target=*tag_cut] →食材を切る [endlink][r]
+[link target=*tag_nocut] →豪快に全部丸ごといっちゃえ！！ [endlink][r]
+[s]
+
+*tag_cut
+
+[cm]
+
+[bg storage=cooking15_rangiri.png time=500]
+
+食材を切ったぞ！[l][r]
+次はどうしよう？[l][r]
+
+[link target=*tag_nofry] →カレーって水と具とルー入れればいいんだよね…？ [endlink][r]
+[link target=*tag_fry] →まずはお肉から、順番に炒めよう！ [endlink][r]
+[s]
+
+*tag_nofry
+
+[cm]
+
+[bg storage=cooking_nabe_curry.png time=500]
+
+お！なんだかカレーっぽくなってきた！[l][r]
+完成かな？[l][r]
+
+[link target=*tag_hard] →よし！お皿に盛って完成だ！ [endlink][r]
+[link target=*tag_sweet] →隠し味で砂糖でもいれてみよう！多いほうがおいしいよね！ [endlink][r]
+[s]
+
+*tag_hard
+
+[cm]
+
+[bg storage=ajimi_mazui_man.png time=500]
+
+味は普通だけど具が固くて食べられないや…[l][r]
 
 【 BAD END 】[l][cm]
 
 [jump target=*start]
 
-*tag_run
-
-[bg storage=run.jpg time=500]
+*tag_sweet
 
 [cm]
-メロスは黒い風のように走った。[l][r]
-陽は、ゆらゆら地平線に没し、まさに最後の一片の残光も、消えようとした時、メロスは疾風の如く刑場に突入した。間に合った。[r]
+
+[bg storage=ajimi_mazui_man.png time=500]
+
+うわ～、変な味！具も固すぎるよ！[l][r]
+
+【 BAD END 】[l][cm]
+
+[jump target=*start]
+
+*tag_fry
+
+[cm]
+
+[bg storage=cooking_nabe_curry.png time=500]
+
+しっかり火が通ったみたい！[l][r]
+水を入れて…ルーを入れて…[l][r]
+完成かな？[l][r]
+
+[link target=*tag_close] →よし！お皿に盛って完成だ！ [endlink][r]
+[link target=*tag_good] →しばらく煮込むよ！ [endlink][r]
+[s]
+
+*tag_close
+
+[cm]
+
+[bg storage=food_curryruce.png time=500]
+
+なかなかいける！[l][r]
+でもちょっとあっさりだな…[l][r]
+
+【 BAD END 】[l][cm]
+
+[jump target=*start]
+
+*tag_good
+
+[cm]
+
+[bg storage=syokuji_curry_man.png time=500]
+
+おいしい！大成功！！[l][r]
 
 【 GOOD END 】[l][cm]
+
+[jump target=*start]
+
+
+*tag_nocut
+
+[cm]
+
+[bg storage=ajimi_mazui_man.png time=500]
+
+買ってきたもの全部入れてみた！[l][r]
+………[l][r]
+なんだこれは…[l][r]
+
+【 BAD END 】[l][cm]
 
 [jump target=*start]
